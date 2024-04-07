@@ -15,128 +15,127 @@ console.log(ImageOmellete);
           alt="Recipe page challenge"
         />
       </picture>
-      <div class="flex flex-col justify-center px-12">
-        <h1
-          class="text-4xl font-semibold font-serif text-left text-neutral-600"
+      <div class="flex flex-col gap-8 p-12">
+        <div class="flex flex-col gap-4">
+          <h1
+            class="text-4xl font-semibold font-serif text-left text-neutral-600"
+          >
+            Simple Omelette Recipe
+          </h1>
+          <p class="font-medium text-neutral-600">
+            An easy and quick dish, perfect fot any meal. This classic omelet
+            combines beaten eggs cocked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-4 bg-rose-500/10 text-rose-900 rounded-lg p-8"
         >
-          Simple Omelette Recipe
-        </h1>
-        <p>
-          An easy and quick dish, perfect fot any meal. This classic omelet
-          combines beaten eggs cocked to perfection, optionally filled with your
-          choice of cheese, vegetables, or meats.
-        </p>
-      </div>
-      <div class="flex flex-col gap-4 px-12">
-        <h4>Preparation time</h4>
-        <ul class="flex flex-col gap-2">
-          <li>Total: Approximately 10 minutes</li>
-          <li>Preparation: 5 minutes</li>
-          <li>Cooking: 5 minutes</li>
-        </ul>
+          <h3 class="text-2xl font-medium">Preparation time</h3>
+          <ul
+            class="flex flex-col list-inside text-neutral-700 list-disc gap-2"
+          >
+            <li>
+              <span class="font-medium text-neutral-800">Total:</span> Approximately
+              10 minutes
+            </li>
+            <li>
+              <span class="font-medium text-neutral-800">Preparation:</span> 5 minutes
+            </li>
+            <li>
+              <span class="font-medium text-neutral-800">Cooking:</span> 5 minutes
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <section class="flex flex-col gap-8 px-12">
-      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
-        Ingredients
-      </h2>
-      <ul class="flex flex-col gap-2">
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li>
-          Optional fillings: cheese, dices vegetables, cooked meats, herbs
-        </li>
-      </ul>
-    </section>
-    <hr class="border-t border-neutral-200" />
-    <section class="flex flex-col gap-8 px-12">
-      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
-        Instructions
-      </h2>
-      <ol class="flex flex-col gap-2">
-        <li>Crack the eggs into a bowl and beat them until smooth.</li>
-        <li>Season with salt and pepper.</li>
-        <li>Heat the butter or oil in a non-stick skillet over medium heat.</li>
-        <li>
-          Pour the eggs into the skillet and cook for 1-2 minutes, until the
-          bottom is set.
-        </li>
-        <li>
-          Add the fillings of your choice to one side of the omelet, then fold
-          the other side over the fillings.
-        </li>
-        <li>
-          Cook for another 1-2 minutes, until the eggs are cooked through.
-        </li>
-        <li>Slide the omelet onto a plate and serve hot.</li>
-      </ol>
-    </section>
-    <section class="flex flex-col gap-8 px-12">
-      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
-        Nutrition
-      </h2>
-      <p>
-        The tables bewlow shows nutritional values whitour the additional
-        fillings.
-      </p>
-      <table>
-        <thead>
+  </main>
+  <section class="flex flex-col my-8 px-12">
+    <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+      Ingredients
+    </h2>
+    <ul class="flex p-8 list-outside list-disc font-medium text-neutral-600 flex-col gap-2">
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, dices vegetables, cooked meats, herbs</li>
+    </ul>
+  </section>
+  <hr class="border-t mx-auto w-4/5 border-neutral-200" />
+  <section class="flex flex-col my-8 px-12">
+    <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+      Instructions
+    </h2>
+    <ol class="flex flex-col list-decimal p-8 gap-2">
+      <li class="font-semibold text-rose-900 text-xl">
+        <p class=" text-base font-medium text-neutral-600 break-words ml-4">
+            <span class="font-bold text-neutral-700">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until well mixed. You can add a tablespoon of water or milk to make the eggs fluffier texture.
+        </p>
+      </li>
+      <li class="font-semibold text-rose-900 text-xl">
+        <p class=" text-base
+        font-medium text-neutral-600 break-words ml-4">
+            <span class="font-bold text-neutral-700">Heat the pan:</span> Heat a non-stick skillet over medium heat. Add the butter or oil and let it melt.
+        </p>
+      </li>
+      <li class="font-semibold text-rose-900 text-xl">
+        <p class=" text-base
+        font-medium text-neutral-600 break-words ml-4">
+            <span class="font-bold text-neutral-700">Cook the eggs:</span> Pour the eggs into the skillet and let them cook undisturbed for 1-2 minutes, until the edges start to set.
+        </p>
+      </li>
+      <li class="font-semibold text-rose-900 text-xl">
+        <p class=" text-base
+        font-medium text-neutral-600 break-words ml-4">
+            <span class="font-bold text-neutral-700">Add the fillings:</span> Sprinkle the fillings of your choice over the eggs. When the eggs are mostly set but still a little runny in the middle, fold the omelet in half.
+        </p>
+      </li>
+      <li class="font-semibold text-rose-900 text-xl">
+        <p class=" text-base
+        font-medium text-neutral-600 break-words ml-4">
+            <span class="font-bold text-neutral-700">Serve:</span> Slide the omelet onto a plate and serve hot.
+        </p>
+      </li>
+    </ol>
+  </section>
+  <section class="flex flex-col gap-8 px-12">
+   <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+      Nutrition
+      </h2> 
+
+      <table class="w-full text-neutral-600">
+        <thead class="border-b">
           <tr>
-            <th></th>
-            <th>Per Serving</th>
-            <th>% Daily Value</th>
+            <th class="font-medium text-left">Nutrient</th>
+            <th class="font-medium text-left">Amount</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Calories</td>
-            <td>70</td>
-            <td>4%</td>
-          </tr>
-          <tr>
-            <td>Total Fat</td>
-            <td>5g</td>
-            <td>6%</td>
-          </tr>
-          <tr>
-            <td>Saturated Fat</td>
-            <td>2g</td>
-            <td>10%</td>
-          </tr>
-          <tr>
-            <td>Cholesterol</td>
-            <td>185mg</td>
-            <td>62%</td>
-          </tr>
-          <tr>
-            <td>Sodium</td>
-            <td>70mg</td>
-            <td>3%</td>
-          </tr>
-          <tr>
-            <td>Total Carbohydrate</td>
-            <td>1g</td>
-            <td>0%</td>
-          </tr>
-          <tr>
-            <td>Dietary Fiber</td>
-            <td>0g</td>
-            <td>0%</td>
-          </tr>
-          <tr>
-            <td>Sugars</td>
-            <td>1g</td>
-            <td>0%</td>
+            <td>90</td>
           </tr>
           <tr>
             <td>Protein</td>
             <td>6g</td>
-            <td>12%</td>
+          </tr>
+          <tr>
+            <td>Fat</td>
+            <td>7g</td>
+          </tr>
+          <tr>
+            <td>Carbohydrates</td>
+            <td>1g</td>
+          </tr>
+          <tr>
+            <td>Fiber</td>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <td>Sugars</td>
+            <td>0g</td>
           </tr>
         </tbody>
-      </table>
-    </section>
-  </main>
+  </section>
 </Layout>
