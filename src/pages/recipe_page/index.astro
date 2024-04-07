@@ -1,0 +1,142 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { ImageOmellete } from "./assets";
+
+console.log(ImageOmellete);
+---
+
+<Layout title="Recipe page challenge">
+  <main class="flex flex-col w-full">
+    <header class="flex flex-col gap-8">
+      <picture class="min-h-56">
+        <img
+          class="object-cover w-full h-full"
+          src={ImageOmellete.src}
+          alt="Recipe page challenge"
+        />
+      </picture>
+      <div class="flex flex-col justify-center px-12">
+        <h1
+          class="text-4xl font-semibold font-serif text-left text-neutral-600"
+        >
+          Simple Omelette Recipe
+        </h1>
+        <p>
+          An easy and quick dish, perfect fot any meal. This classic omelet
+          combines beaten eggs cocked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4 px-12">
+        <h4>Preparation time</h4>
+        <ul class="flex flex-col gap-2">
+          <li>Total: Approximately 10 minutes</li>
+          <li>Preparation: 5 minutes</li>
+          <li>Cooking: 5 minutes</li>
+        </ul>
+      </div>
+    </header>
+    <section class="flex flex-col gap-8 px-12">
+      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
+        Ingredients
+      </h2>
+      <ul class="flex flex-col gap-2">
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>
+          Optional fillings: cheese, dices vegetables, cooked meats, herbs
+        </li>
+      </ul>
+    </section>
+    <hr class="border-t border-neutral-200" />
+    <section class="flex flex-col gap-8 px-12">
+      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
+        Instructions
+      </h2>
+      <ol class="flex flex-col gap-2">
+        <li>Crack the eggs into a bowl and beat them until smooth.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Heat the butter or oil in a non-stick skillet over medium heat.</li>
+        <li>
+          Pour the eggs into the skillet and cook for 1-2 minutes, until the
+          bottom is set.
+        </li>
+        <li>
+          Add the fillings of your choice to one side of the omelet, then fold
+          the other side over the fillings.
+        </li>
+        <li>
+          Cook for another 1-2 minutes, until the eggs are cooked through.
+        </li>
+        <li>Slide the omelet onto a plate and serve hot.</li>
+      </ol>
+    </section>
+    <section class="flex flex-col gap-8 px-12">
+      <h2 class="text-2xl font-semibold font-serif text-left text-neutral-600">
+        Nutrition
+      </h2>
+      <p>
+        The tables bewlow shows nutritional values whitour the additional
+        fillings.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Per Serving</th>
+            <th>% Daily Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Calories</td>
+            <td>70</td>
+            <td>4%</td>
+          </tr>
+          <tr>
+            <td>Total Fat</td>
+            <td>5g</td>
+            <td>6%</td>
+          </tr>
+          <tr>
+            <td>Saturated Fat</td>
+            <td>2g</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>Cholesterol</td>
+            <td>185mg</td>
+            <td>62%</td>
+          </tr>
+          <tr>
+            <td>Sodium</td>
+            <td>70mg</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>Total Carbohydrate</td>
+            <td>1g</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Dietary Fiber</td>
+            <td>0g</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Sugars</td>
+            <td>1g</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>6g</td>
+            <td>12%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</Layout>
