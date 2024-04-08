@@ -1,0 +1,54 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ButtonLink from "./_components/ButtonLink.astro";
+---
+
+<Layout title="Social link profile">
+  <main
+    class="flex flex-col min-h-screen justify-center items-center bg-neutral-900"
+  >
+    <section
+      class="flex shadow-2xl w-full max-w-sm bg-neutral-800/70 flex-col px-12 gap-4 py-8 rounded-lg"
+    >
+      <picture class="flex justify-center shadow items-center">
+        <img
+          class="rounded-full w-24 h-24"
+          src="https://randomuser.me/api/portraits/lego/3.jpg"
+          alt="avatar"
+        />
+      </picture>
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-2xl text-neutral-300 font-bold">John Doe</h1>
+        <p class="text-lime-300 font-medium text-md text-center">
+          London, United Kingdom
+        </p>
+      </div>
+      <quote class="text-neutral-400 font-medium text-center">
+        "Front end developer and avid reader."
+      </quote>
+      <footer class="flex mt-4 flex-col gap-6">
+        <ButtonLink href="https://github.com">
+          Github
+        </ButtonLink>
+
+        <ButtonLink href="https://twitter.com">
+          Twitter
+        </ButtonLink>
+
+        <ButtonLink href="https://linkedin.com/in">
+          LinkedIn
+        </ButtonLink>
+
+        <ButtonLink href="https://instagram.com">
+          Instagram
+        </ButtonLink>
+
+        <ButtonLink href="https://facebook.com">
+          Facebook
+        </ButtonLink>
+
+        
+      </footer>
+    </section>
+  </main>
+</Layout>
