@@ -1,141 +1,170 @@
 ---
+import Image from "astro/components/Image.astro";
 import Layout from "../../layouts/Layout.astro";
-import { ImageOmellete } from "./assets";
+import { ImageOmellete, FaviconRecipePage } from "./_assets";
 
 console.log(ImageOmellete);
 ---
 
-<Layout title="Recipe page challenge">
-  <main class="flex flex-col w-full">
-    <header class="flex flex-col gap-8">
-      <picture class="min-h-56">
-        <img
-          class="object-cover w-full h-full"
-          src={ImageOmellete.src}
-          alt="Recipe page challenge"
-        />
-      </picture>
-      <div class="flex flex-col gap-8 p-12">
-        <div class="flex flex-col gap-4">
-          <h1
-            class="text-4xl font-semibold font-serif text-left text-neutral-600"
-          >
-            Simple Omelette Recipe
-          </h1>
-          <p class="font-medium text-neutral-600">
-            An easy and quick dish, perfect fot any meal. This classic omelet
-            combines beaten eggs cocked to perfection, optionally filled with
-            your choice of cheese, vegetables, or meats.
-          </p>
-        </div>
-        <div
-          class="flex flex-col gap-4 bg-rose-500/10 text-rose-900 rounded-lg p-8"
+<Layout title="Recipe page challenge" icon={FaviconRecipePage}>
+  <section class="flex flex-col items-center justify-center md:py-24 bg-rose-200">
+    <div class="md:max-w-xl w-full max-w-none bg-white shadow rounded-2xl">
+      <main class="flex flex-col w-full">
+        <header class="flex flex-col gap-8">
+          <picture class="min-h-56 md:mt-12 md:px-8 overflow-hidden">
+            <Image
+              class="object-cover md:rounded-2xl w-full h-full"
+              src={ImageOmellete}
+              alt="Recipe page challenge"
+            />
+          </picture>
+          <div class="flex flex-col gap-8 pt-4 pb-8 px-12">
+            <div class="flex flex-col gap-4">
+              <h1
+                class="text-4xl font-semibold font-serif text-left text-neutral-600"
+              >
+                Simple Omelette Recipe
+              </h1>
+              <p class="font-medium text-neutral-600">
+                An easy and quick dish, perfect fot any meal. This classic
+                omelet combines beaten eggs cocked to perfection, optionally
+                filled with your choice of cheese, vegetables, or meats.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 bg-rose-500/10 text-rose-900 rounded-lg p-8"
+            >
+              <h3 class="text-2xl font-medium">Preparation time</h3>
+              <ul
+                class="flex flex-col list-inside text-neutral-700 list-disc gap-2"
+              >
+                <li>
+                  <span class="font-medium text-neutral-800">Total:</span> Approximately
+                  10 minutes
+                </li>
+                <li>
+                  <span class="font-medium text-neutral-800">Preparation:</span>
+                  5 minutes
+                </li>
+                <li>
+                  <span class="font-medium text-neutral-800">Cooking:</span> 5 minutes
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </main>
+      <section class="flex flex-col my-8 px-12">
+        <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+          Ingredients
+        </h2>
+        <ul
+          class="flex p-8 list-outside list-disc font-medium text-neutral-600 flex-col gap-2"
         >
-          <h3 class="text-2xl font-medium">Preparation time</h3>
-          <ul
-            class="flex flex-col list-inside text-neutral-700 list-disc gap-2"
-          >
-            <li>
-              <span class="font-medium text-neutral-800">Total:</span> Approximately
-              10 minutes
-            </li>
-            <li>
-              <span class="font-medium text-neutral-800">Preparation:</span> 5 minutes
-            </li>
-            <li>
-              <span class="font-medium text-neutral-800">Cooking:</span> 5 minutes
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-  </main>
-  <section class="flex flex-col my-8 px-12">
-    <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
-      Ingredients
-    </h2>
-    <ul class="flex p-8 list-outside list-disc font-medium text-neutral-600 flex-col gap-2">
-      <li>2-3 large eggs</li>
-      <li>Salt, to taste</li>
-      <li>Pepper, to taste</li>
-      <li>1 tablespoon of butter or oil</li>
-      <li>Optional fillings: cheese, dices vegetables, cooked meats, herbs</li>
-    </ul>
-  </section>
-  <hr class="border-t mx-auto w-4/5 border-neutral-200" />
-  <section class="flex flex-col my-8 px-12">
-    <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
-      Instructions
-    </h2>
-    <ol class="flex flex-col list-decimal p-8 gap-2">
-      <li class="font-semibold text-rose-900 text-xl">
-        <p class=" text-base font-medium text-neutral-600 break-words ml-4">
-            <span class="font-bold text-neutral-700">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until well mixed. You can add a tablespoon of water or milk to make the eggs fluffier texture.
-        </p>
-      </li>
-      <li class="font-semibold text-rose-900 text-xl">
-        <p class=" text-base
-        font-medium text-neutral-600 break-words ml-4">
-            <span class="font-bold text-neutral-700">Heat the pan:</span> Heat a non-stick skillet over medium heat. Add the butter or oil and let it melt.
-        </p>
-      </li>
-      <li class="font-semibold text-rose-900 text-xl">
-        <p class=" text-base
-        font-medium text-neutral-600 break-words ml-4">
-            <span class="font-bold text-neutral-700">Cook the eggs:</span> Pour the eggs into the skillet and let them cook undisturbed for 1-2 minutes, until the edges start to set.
-        </p>
-      </li>
-      <li class="font-semibold text-rose-900 text-xl">
-        <p class=" text-base
-        font-medium text-neutral-600 break-words ml-4">
-            <span class="font-bold text-neutral-700">Add the fillings:</span> Sprinkle the fillings of your choice over the eggs. When the eggs are mostly set but still a little runny in the middle, fold the omelet in half.
-        </p>
-      </li>
-      <li class="font-semibold text-rose-900 text-xl">
-        <p class=" text-base
-        font-medium text-neutral-600 break-words ml-4">
-            <span class="font-bold text-neutral-700">Serve:</span> Slide the omelet onto a plate and serve hot.
-        </p>
-      </li>
-    </ol>
-  </section>
-  <section class="flex flex-col gap-8 px-12">
-   <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
-      Nutrition
-      </h2> 
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, dices vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </section>
+      <hr class="border-t mx-auto w-4/5 border-neutral-200" />
+      <section class="flex flex-col my-8 px-12">
+        <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+          Instructions
+        </h2>
+        <ol class="flex flex-col list-decimal p-8 gap-2">
+          <li class="font-semibold text-rose-900 text-xl">
+            <p class="text-base font-medium text-neutral-600 break-words ml-4">
+              <span class="font-bold text-neutral-700">Beat the eggs:</span> In a
+              bowl, beat the eggs with a pinch of salt and pepper until well mixed.
+              You can add a tablespoon of water or milk to make the eggs fluffier
+              texture.
+            </p>
+          </li>
+          <li class="font-semibold text-rose-900 text-xl">
+            <p
+              class="text-base
+        font-medium text-neutral-600 break-words ml-4"
+            >
+              <span class="font-bold text-neutral-700">Heat the pan:</span> Heat
+              a non-stick skillet over medium heat. Add the butter or oil and let
+              it melt.
+            </p>
+          </li>
+          <li class="font-semibold text-rose-900 text-xl">
+            <p
+              class="text-base
+        font-medium text-neutral-600 break-words ml-4"
+            >
+              <span class="font-bold text-neutral-700">Cook the eggs:</span> Pour
+              the eggs into the skillet and let them cook undisturbed for 1-2 minutes,
+              until the edges start to set.
+            </p>
+          </li>
+          <li class="font-semibold text-rose-900 text-xl">
+            <p
+              class="text-base
+        font-medium text-neutral-600 break-words ml-4"
+            >
+              <span class="font-bold text-neutral-700">Add the fillings:</span> Sprinkle
+              the fillings of your choice over the eggs. When the eggs are mostly
+              set but still a little runny in the middle, fold the omelet in half.
+            </p>
+          </li>
+          <li class="font-semibold text-rose-900 text-xl">
+            <p
+              class="text-base
+        font-medium text-neutral-600 break-words ml-4"
+            >
+              <span class="font-bold text-neutral-700">Serve:</span> Slide the omelet
+              onto a plate and serve hot.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section class="flex flex-col my-8 gap-8 px-12">
+        <h2 class="text-2xl font-semibold font-serif text-left text-rose-900">
+          Nutrition
+        </h2>
 
-      <table class="w-full text-neutral-600">
-        <thead class="border-b">
-          <tr>
-            <th class="font-medium text-left">Nutrient</th>
-            <th class="font-medium text-left">Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Calories</td>
-            <td>90</td>
-          </tr>
-          <tr>
-            <td>Protein</td>
-            <td>6g</td>
-          </tr>
-          <tr>
-            <td>Fat</td>
-            <td>7g</td>
-          </tr>
-          <tr>
-            <td>Carbohydrates</td>
-            <td>1g</td>
-          </tr>
-          <tr>
-            <td>Fiber</td>
-            <td>0g</td>
-          </tr>
-          <tr>
-            <td>Sugars</td>
-            <td>0g</td>
-          </tr>
-        </tbody>
+        <table class="w-full text-neutral-600">
+          <thead class="border-b">
+            <tr>
+              <th class="font-medium text-left">Nutrient</th>
+              <th class="font-medium text-left">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Calories</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td>6g</td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td>7g</td>
+            </tr>
+            <tr>
+              <td>Carbohydrates</td>
+              <td>1g</td>
+            </tr>
+            <tr>
+              <td>Fiber</td>
+              <td>0g</td>
+            </tr>
+            <tr>
+              <td>Sugars</td>
+              <td>0g</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
   </section>
 </Layout>
