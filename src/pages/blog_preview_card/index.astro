@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import { BlogImage, Avatar } from "./_assets";
+---
+
+<Layout title="Blog preview card">
+  <main
+    class="flex min-h-screen w-full bg-yellow-400 flex-col justify-center items-center"
+  >
+    <div class="max-w-sm mx-auto">
+      <article
+        class="flex flex-col bg-white p-6 shadow-border rounded-xl border-2 border-black/30 gap-4 hover:scale-105 transition duration-300 ease-in-out"
+      >
+        <picture class="rounded-md w-full overflow-hidden">
+          <Image
+            src={BlogImage}
+            class="w-full h-full"
+            alt="Patterns of preview"
+          />
+        </picture>
+        <div class="flex flex-col gap-2">
+          <span
+            class="px-4 py-1 bg-yellow-400 text-neutral-800 font-medium me-auto rounded-md"
+            >Learning</span
+          >
+          <p class="text-neutral-700 font-medium">
+            Published <time>21 Dec 2023</time>
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-bold text-neutral-900">
+            HTML & CSS foundations
+          </h2>
+
+          <p class="text-neutral-700">
+            These languages are the building blocks of the web. Learn how to
+            structure your content and style it for the web.
+          </p>
+        </div>
+        <hr class="border-t-2 border-black/10" />
+        <footer class="flex flex-col gap-4">
+          <a
+            href="#"
+            class="flex me-auto flex-row gap-4 items-center text-neutral8500 font-medium"
+          >
+            <Image src={Avatar} class="h-8 w-8 rounded-full" alt="Author" />
+            <span class="">John Doe</span>
+          </a>
+        </footer>
+      </article>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .shadow-border {
+    box-shadow: 10px 15px 0 1px black;
+  }
+
+  .shadow-border:hover {
+    box-shadow: 20px 20px 0 1px black;
+  }
+</style>
